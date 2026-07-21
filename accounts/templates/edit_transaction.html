@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container mt-4">
+
+
+    <div class="card shadow border-0 rounded-4">
+
+
+
+        <div class="card-header bg-dark text-white rounded-top-4">
+
+
+            <h3>
+
+                <i class="bi bi-pencil"></i>
+
+                Edit Transaction
+
+            </h3>
+
+
+        </div>
+
+
+
+
+
+        <div class="card-body">
+
+
+
+            <form method="POST">
+
+
+                {% csrf_token %}
+
+
+
+
+
+                {% for field in form %}
+
+
+
+                <div class="mb-3">
+
+
+                    {{ field.label_tag }}
+
+
+
+                    {{ field }}
+
+
+
+
+                    {% for error in field.errors %}
+
+
+                    <div class="text-danger small mt-1">
+
+
+                        <i class="bi bi-exclamation-circle"></i>
+
+                        {{ error }}
+
+
+                    </div>
+
+
+                    {% endfor %}
+
+
+
+                </div>
+
+
+
+                {% endfor %}
+
+
+
+
+
+
+
+                {% if form.non_field_errors %}
+
+
+                <div class="alert alert-danger">
+
+
+                    {% for error in form.non_field_errors %}
+
+
+                    {{ error }}
+
+
+                    {% endfor %}
+
+
+                </div>
+
+
+                {% endif %}
+
+
+
+
+
+                <button type="submit" class="btn btn-success">
+
+
+                    <i class="bi bi-check-circle"></i>
+
+                    Update
+
+
+                </button>
+
+
+
+
+
+                <a href="{% url 'transaction_list' %}" class="btn btn-secondary">
+
+
+                    Cancel
+
+
+                </a>
+
+
+
+
+            </form>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+{% endblock %}
