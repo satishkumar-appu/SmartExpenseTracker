@@ -143,19 +143,19 @@ https://smartexpensetracker-pwes.onrender.com
 ## Screenshots
 
 ### Login Page
-![Login](screenshots/login.png)
+![Login](Screenshots/login.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Screenshots/dashboard.png)
 
 ### add_transaction
-![add_transaction](screenshots/add_transaction.png)
+![add_transaction](Screenshots/add_transaction.png)
 
 ### insights
-![insights](screenshots/insights.png)
+![insights](Screenshots/insights.png)
 
 ### transaction_history
-![transaction_history](screenshots/transaction_history.png)
+![transaction_history](Screenshots/transaction_history.png)
 
 
 ## Learning Outcomes
