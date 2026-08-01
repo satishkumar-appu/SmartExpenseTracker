@@ -1,69 +1,175 @@
 # Smart Expense Tracker
 
-A Django based expense management application that helps users track income, expenses, and financial insights.
+A Django-based expense management web application that helps users manage income, expenses, and view financial insights.
 
 ## Features
 
-- User registration and login
+- User registration, login, and logout
+- Secure authentication using Django authentication system
 - Add income and expenses
+- View transaction history
 - Update and delete transactions
 - Search and filter transactions
 - Dashboard with income, expense, and balance summary
 - Expense category analysis
-- AI-based financial suggestions
-- PDF expense report generation
-- Form validation
-- Automated testing
+- Interactive charts using Chart.js
+- Generate PDF expense reports
+- Responsive user interface using Bootstrap
+
 
 ## Technologies Used
 
+Backend:
 - Python
 - Django
-- MySQL
-- HTML
-- CSS
-- Bootstrap
+
+Frontend:
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+Database:
+- PostgreSQL
+
+Libraries:
+- Chart.js
+- ReportLab
+
+Deployment:
+- Render
+
+Version Control:
+- Git & GitHub
+
+
+## Project Structure
+
+```
+SmartExpenseTracker/
+
+├── accounts/
+│   └── User authentication and account management
+
+├── expenses/
+│   └── Income and expense management features
+
+├── insights/
+│   └── Analytics and financial insights
+
+├── expense_tracker/
+│   └── Main Django project configuration
+
+├── manage.py
+│   └── Django management script
+
+├── requirements.txt
+│   └── Project dependencies
+
+└── README.md
+    └── Project documentation
+```
+
 
 ## Installation
 
-Clone the project:
-```bash
-## Installation
-
-Clone the project:
-
-Continue adding the setup commands.
-
-Add:
+Clone the repository:
 
 ```bash
-git clone your-github-repository-link
+git clone https://github.com/satishkumar-appu/SmartExpenseTracker.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd SmartExpenseTracker
+```
 
 Create virtual environment:
 
+```bash
 python -m venv env
+```
 
 Activate virtual environment:
 
+Windows:
+
+```bash
 env\Scripts\activate
+```
 
-Install required packages:
+Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Apply database migrations:
+Apply migrations:
 
+```bash
 python manage.py migrate
+```
 
 Create admin user:
 
+```bash
 python manage.py createsuperuser
+```
 
-Run the development server:
+Run the application:
 
+```bash
 python manage.py runserver
-Testing
+```
 
-Run tests using:
 
-python manage.py test
+Open in browser:
+
+```
+http://127.0.0.1:8000/
+```
+
+
+## Deployment
+
+The application is deployed using Render.
+
+Live Demo:
+
+https://smartexpensetracker-pwes.onrender.com
+
+
+## Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### add_transaction
+![add_transaction](screenshots/add_transaction.png)
+
+### insights
+![insights](screenshots/insights.png)
+
+### transaction_history
+![transaction_history](screenshots/transaction_history.png)
+
+
+## Learning Outcomes
+
+- Django MVT architecture
+- Django authentication
+- CRUD operations
+- Django ORM
+- Database integration
+- Template rendering
+- Frontend and backend integration
+- Deployment of Django application
+
+
+## Author
+
+Satish Kumar
