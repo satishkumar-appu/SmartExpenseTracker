@@ -136,6 +136,9 @@ http://127.0.0.1:8000/
 The application is deployed using Render.
 
 Live Demo:
+## DEMO LOGIN:
+USERNAME: demo
+PASSWORD : demo#123
 
 https://smartexpensetracker-pwes.onrender.com
 
